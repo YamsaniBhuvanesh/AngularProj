@@ -5,7 +5,11 @@
   "projects": {
     "Paintings_Ecom": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+            "module": "app"
+          }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
