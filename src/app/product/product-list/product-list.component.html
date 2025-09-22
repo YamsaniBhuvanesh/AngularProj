@@ -1,13 +1,19 @@
 <p>product-list works!</p>
-<div *ngFor="let product of products">
-    <!-- <h2>{{product.name}}</h2> -->
-    <mat-card class="product-card">
-    <img mat-card-image src="images/{{product.image_url}}">
-        <mat-card-content>
-          <mat-card-title>{{product.name}}</mat-card-title>
-          <mat-card-subtitle>{{product.price | currency:'USD'}}</mat-card-subtitle>
-        </mat-card-content>
-    </mat-card>
+
+<div class="container">
+
+  <h2>Our Latest Collection</h2>
+
+  <div class="flex-container">
+  <div class="flex-item" *ngFor="let product of products">
+      <!-- <h2>{{product.name}}</h2> -->
+      <mat-card class="product-card">
+      <img mat-card-image src="images/{{product.image_url}}">
+          <mat-card-content>
+            <mat-card-title>{{product.name}}</mat-card-title>
+            <mat-card-subtitle>{{product.price | currency:'USD'}}</mat-card-subtitle>
+          </mat-card-content>
+      </mat-card>
+  </div>
 </div>
-
-
+</div>

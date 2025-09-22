@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { MatCardModule } from '@angular/material/card'; // Example Material module
 import { MatButtonModule } from '@angular/material/button'; // Example Material module
 import { ProductListComponent } from './product/product-list/product-list.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { ProductListComponent } from './product/product-list/product-list.compon
     AppRoutingModule, // Rely on AppRoutingModule for routing
     ProductModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [
     provideHttpClient(),
