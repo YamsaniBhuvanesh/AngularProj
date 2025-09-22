@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card'; // Example Material modu
 import { MatButtonModule } from '@angular/material/button'; // Example Material module
 import { ProductListComponent } from './product/product-list/product-list.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ProductModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    CartModule
   ],
   providers: [
     provideHttpClient(),
