@@ -9,7 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
   imports: [
     CommonModule,
     ProductListComponent,
-    MatCardModule,
+    MatCardModule
   ]
 })
 export class ProductModule { }

@@ -1,0 +1,32 @@
+/* cart-view.component.css */
+.cart-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-item {
+  padding: 30px 0; /* Increased from 10px to 15px for more space between items */
+  border-bottom: 1px solid #eee;
+}
+
+.item-name {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px; /* Reduced from 4px to 2px for less space between name and price */
+}
+
+.item-price {
+  display: block;
+  font-size: 1em;
+  color: #666;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 1.2em;
+}

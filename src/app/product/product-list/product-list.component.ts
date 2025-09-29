@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from '../../models/product';
-import { BrowserModule } from "@angular/platform-browser";
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from "@angular/material/card";
 

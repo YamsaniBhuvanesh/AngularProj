@@ -10,18 +10,22 @@ import { MatCardModule } from '@angular/material/card'; // Example Material modu
 import { MatButtonModule } from '@angular/material/button'; // Example Material module
 import { ProductListComponent } from './product/product-list/product-list.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
+import { MatListModule } from '@angular/material/list';
 import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,ProductListComponent,
+    BrowserModule,
     BrowserAnimationsModule,
+    CommonModule,
     AppRoutingModule, // Rely on AppRoutingModule for routing
     ProductModule,
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatListModule,
     CartModule
   ],
   providers: [

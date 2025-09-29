@@ -19,7 +19,7 @@ export class CartService {
     return this.http.post<Product>(this.apiUrl,product);
   }
 
-  getCartItem():Observable<Product[]>
+  getCartItems():Observable<Product[]>
   {
     return this.http.get<Product[]>(this.apiUrl);
   }
