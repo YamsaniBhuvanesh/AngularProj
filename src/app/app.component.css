@@ -1,0 +1,30 @@
+/* app.component.css */
+mat-toolbar {
+  justify-content: center; /* Center the toolbar row content */
+}
+
+.nav-button {
+  font-size: 1.2em; /* Increased font size for larger text */
+  padding: 10px 20px; /* Increased padding for larger button size */
+  margin: 0 10px; /* Space between buttons */
+}
+
+.container {
+  max-width: 800px; /* Constrain width for centering */
+  margin: 20px auto; /* Center the div horizontally with top/bottom margin */
+  text-align: center; /* Center text within the div */
+}
+
+.text-center {
+  text-align: center; /* Ensure text is centered (redundant with container but explicit) */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger heading for emphasis */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+h3 {
+  font-size: 1.2em; /* Slightly larger subheading */
+  color: #666; /* Subtle color */
+}
