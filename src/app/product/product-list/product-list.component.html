@@ -4,10 +4,14 @@
 
   <h2>Our Latest Collection</h2>
 
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Search">
+  </mat-form-field>
+
   <div class="flex-container">
-  <div class="flex-item" *ngFor="let product of products">
+  <div class="flex-item" *ngFor="let product of filteredProducts">
       <!-- <h2>{{product.name}}</h2> -->
-      <mat-card class="product-card">
+      <mat-card class="product-card" (click)="addToCart(product)">
       <img mat-card-image src="images/{{product.image_url}}">
           <mat-card-content>
             <mat-card-title>{{product.name}}</mat-card-title>

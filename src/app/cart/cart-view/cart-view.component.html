@@ -7,6 +7,19 @@
       <span class="item-name">{{ item.name }}</span>
       <span class="item-price">{{ item.price | currency:'USD' }}</span>
     </mat-list-item>
+    <mat-list-item class="cart-item">
+      <span class="item-name">Total (USD)</span>
+      <span class="price">{{ totalPrice | currency:'USD' }}</span>
+    </mat-list-item>
+
+    <mat-list-item class="text-right">
+        <button mat-flat-button (click)="clearCart()">Clear</button>
+    </mat-list-item>
+
+    <mat-list-item class="text-right">
+        <button mat-raised-button color="accent" (click)="checkout()">Checkout</button>
+    </mat-list-item>
+
   </mat-list>
 
   <p *ngIf="cartItems.length === 0" class="empty-cart">Your cart is empty</p>

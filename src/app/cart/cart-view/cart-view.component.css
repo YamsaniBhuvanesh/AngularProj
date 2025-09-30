@@ -24,6 +24,10 @@
   color: #666;
 }
 
+.price{
+    font-weight: 800;
+}
+
 .empty-cart {
   text-align: center;
   color: #666;
